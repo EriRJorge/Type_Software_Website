@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type_List - Type_Software</title>
+    <meta name="description" content="Learn more about Type_List, a minimalist, feature-rich todo list application that helps you stay organized and productive.">
+    <link rel="icon" type="image/x-icon" href="Favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="cursor-trail"></div>
+
+    <nav id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Icon.png" alt="Type_Software Icon" class="logo-icon">
+                <span class="logo-text">
+                    <span class="logo-type">Type</span><span class="logo-software">_Software</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button type="button" class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-header-details">
+                    <svg class="project-icon-large" width="64" height="64" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h1 class="project-title-large">Type_List</h1>
+                    <p class="project-subtitle-large">A minimalist, feature-rich todo list application that helps you stay organized and productive.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="container">
+                <h2>📖 Overview</h2>
+                <p>Type_List is a powerful yet simple todo list application built with vanilla JavaScript, HTML, and CSS. It offers a clean interface and powerful features while maintaining simplicity, making it perfect for anyone looking to stay organized and boost productivity.</p>
+
+                <div class="project-visual">
+                    <div class="website-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="window-title">Type_List Todo App</span>
+                        </div>
+                        <div class="window-content">
+                            <iframe src="https://typelist.site/" title="Type_List Live Site" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>🚀 Features</h2>
+                <ul>
+                    <li><strong>Smart Tagging System:</strong> Organize tasks with hashtags (e.g., #work, #personal, #shopping)</li>
+                    <li><strong>Dark/Light Mode:</strong> Toggle between themes for comfortable viewing in any environment</li>
+                    <li><strong>Local Storage:</strong> Your tasks persist even after closing the browser</li>
+                    <li><strong>URL Detection:</strong> Automatically converts URLs into clickable links</li>
+                    <li><strong>Search Integration:</strong> Use @ for Google search and ? for auto-complete</li>
+                    <li><strong>Future You Messages:</strong> Get encouraging messages when completing tasks</li>
+                    <li><strong>Progressive Web App:</strong> Install and use offline</li>
+                    <li><strong>Responsive Design:</strong> Works seamlessly on all devices</li>
+                </ul>
+
+                <h2>🛠️ Technologies Used</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> Vanilla JavaScript, HTML5, CSS3</li>
+                    <li><strong>Storage:</strong> Local Storage API</li>
+                    <li><strong>PWA Features:</strong> Service Worker, Web App Manifest</li>
+                    <li><strong>Icons:</strong> Font Awesome</li>
+                </ul>
+
+                <h2>📂 Project Structure</h2>
+                <p>The project follows a clean, organized structure that's easy to understand and modify.</p>
+                <pre><code>Type_List/
+├── index.html          # Main HTML file
+├── styles.css          # CSS styles
+├── script.js           # JavaScript functionality
+├── manifest.json       # PWA manifest
+├── service-worker.js   # Service worker for offline support
+├── favicon.ico         # App icon
+└── Typecode/          # Assets directory
+    └── 1.png          # App icon</code></pre>
+
+                <h2>🔧 Installation & Setup</h2>
+                <p>Getting started with Type_List is incredibly simple.</p>
+                <p>Clone the repository:</p>
+                <pre><code>git clone https://github.com/EriRJorge/Type_List.git</code></pre>
+                <p>Navigate to the project directory:</p>
+                <pre><code>cd Type_List</code></pre>
+                <p>Open <code>index.html</code> in your browser or use a local server.</p>
+
+                <h2>💻 Usage</h2>
+                <h3>Adding Tasks</h3>
+                <ul>
+                    <li>Type your task in the input field</li>
+                    <li>Press Enter or click the + button</li>
+                    <li>Add hashtags to categorize tasks (e.g., "Buy groceries #shopping")</li>
+                </ul>
+
+                <h3>Task Management</h3>
+                <ul>
+                    <li>Click the checkbox to mark a task as complete</li>
+                    <li>Click the × button to delete a task</li>
+                    <li>Use the filter buttons to view different task states</li>
+                    <li>Click on tags to filter tasks by category</li>
+                </ul>
+
+                <h3>Special Commands</h3>
+                <ul>
+                    <li>Start with @ to create a Google search link</li>
+                    <li>Start with ? to create an auto-complete search link</li>
+                    <li>Add URLs directly to create clickable links</li>
+                </ul>
+
+                <h3>Theme Toggle</h3>
+                <ul>
+                    <li>Click the moon/sun icon to switch between dark and light modes</li>
+                </ul>
+
+                <h2>📱 Progressive Web App</h2>
+                <p>Type_List can be installed as a Progressive Web App (PWA) for offline use:</p>
+                <ol>
+                    <li>Visit the website</li>
+                    <li>Click the download icon in the header</li>
+                    <li>Follow your browser's installation prompt</li>
+                </ol>
+
+                <h2>🤝 Contributing</h2>
+                <p>Contributions are welcome! Please feel free to submit a Pull Request.</p>
+                <ol>
+                    <li>Fork the repository</li>
+                    <li>Create your feature branch (<code>git checkout -b feature/AmazingFeature</code>)</li>
+                    <li>Commit your changes (<code>git commit -m 'Add some AmazingFeature'</code>)</li>
+                    <li>Push to the branch (<code>git push origin feature/AmazingFeature</code>)</li>
+                    <li>Open a Pull Request</li>
+                </ol>
+
+                <div class="project-actions">
+                    <a href="https://github.com/EriRJorge/Type_List" class="btn-primary" target="_blank">View on GitHub</a>
+                    <a href="https://typelist.site" class="btn-secondary" target="_blank">Try Type_List Live</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">
+                            <span class="logo-type">Type</span><span class="logo-software">_Software</span>
+                        </span>
+                    </div>
+                    <p>Open source tools for the next generation of developers.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Projects</h4>
+                        <a href="typesearch.html">TypeSearch</a>
+                        <a href="explainbytype.html">Type_List</a>
+                        <a href="typebrowser.html">Type_Browser</a>
+                    </div>
+                    <div class="footer-section">
+                    </div>
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <a href="https://github.com/EriRJorge">GitHub</a>
+                        <a href="https://discord.gg/W93hjTAcDe">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 Type_Software. Open source, always.
+                </p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="license.html">License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

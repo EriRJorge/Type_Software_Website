@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type_Browser - Type_Software</title>
+    <meta name="description" content="Learn more about Type_Browser, a minimalist, customizable, and privacy-focused browser for developers and tinkerers.">
+    <link rel="icon" type="image/x-icon" href="Favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="cursor-trail"></div>
+
+    <nav id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Icon.png" alt="Type_Software Icon" class="logo-icon">
+                <span class="logo-text">
+                    <span class="logo-type">Type</span><span class="logo-software">_Software</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button type="button" class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-header-details">
+                    <svg class="project-icon-large" width="64" height="64" viewBox="0 0 24 24" fill="none">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                        <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <h1 class="project-title-large">Type_Browser</h1>
+                    <p class="project-subtitle-large">A minimalist browser designed for customization, privacy, and code-first exploration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="container">
+                <h2>📖 Overview</h2>
+                <p>Type_Browser is a lightweight, privacy-focused personal web browser built with Python and PyQt5. It offers a user-friendly interface with tabbed browsing, navigation features, and a customizable home page. This project focuses on simplicity and privacy, providing basic web browsing functionalities with minimal distractions.</p>
+
+                <h2>🚀 Features</h2>
+                <ul>
+                    <li><strong>Modern and Clean UI:</strong> User-friendly interface with minimal distractions</li>
+                    <li><strong>Tabbed Browsing:</strong> Open multiple websites in separate tabs</li>
+                    <li><strong>Bookmarks Management:</strong> Save and organize your favorite websites</li>
+                    <li><strong>Browsing History:</strong> Track and access your browsing history</li>
+                    <li><strong>Download Manager:</strong> Handle file downloads efficiently</li>
+                    <li><strong>Settings and Preferences:</strong> Customize your browsing experience</li>
+                    <li><strong>Dark/Light Theme Support:</strong> Choose your preferred visual theme</li>
+                    <li><strong>Keyboard Shortcuts:</strong> Navigate efficiently with keyboard commands</li>
+                    <li><strong>Context Menu:</strong> Right-click functionality for enhanced interaction</li>
+                    <li><strong>Full-screen Mode:</strong> Immersive browsing experience</li>
+                    <li><strong>Zoom Controls:</strong> Adjust page zoom levels</li>
+                    <li><strong>Find in Page:</strong> Search for text within web pages</li>
+                    <li><strong>Save Page As:</strong> Save web pages locally</li>
+                    <li><strong>View Page Source:</strong> Access HTML source code</li>
+                    <li><strong>Inspect Element:</strong> Developer tools for web inspection</li>
+                </ul>
+
+                <h2>🛠️ Technologies Used</h2>
+                <ul>
+                    <li><strong>Backend:</strong> Python 3.x</li>
+                    <li><strong>GUI Framework:</strong> PyQt5</li>
+                    <li><strong>Web Engine:</strong> PyQtWebEngine</li>
+                    <li><strong>Architecture:</strong> Object-oriented design with modular components</li>
+                </ul>
+
+                <h2>📂 Project Structure</h2>
+                <p>The project follows a clean, modular architecture designed for easy customization and extension.</p>
+                <pre><code>/Type_Browser
+│── TypeBrowser.py      # Main application entry point
+│── requirements.txt    # Python dependencies
+│── README.md          # Project documentation
+│── LICENSE            # MIT License
+│── .type_browser/     # User data storage (created on first run)</code></pre>
+
+                <h2>🔧 Installation &amp; Setup</h2>
+                <p>To run this application, you need Python 3.x and the following libraries:</p>
+                <ul>
+                    <li>PyQt5</li>
+                    <li>PyQtWebEngine</li>
+                </ul>
+
+                <h3>Step-by-step installation:</h3>
+                <p>Clone the repository:</p>
+                <pre><code>git clone https://github.com/EriRJorge/Type_Browser.git
+cd Type_Browser</code></pre>
+                <p>Install the required dependencies:</p>
+                <pre><code>pip install -r requirements.txt</code></pre>
+
+                <p>Or install manually:</p>
+                <pre><code>pip install PyQt5 PyQtWebEngine</code></pre>
+
+                <h2>🎯 Usage</h2>
+                <p>Run the browser:</p>
+                <pre><code>python TypeBrowser.py</code></pre>
+
+                <h3>Basic Navigation:</h3>
+                <ul>
+                    <li><strong>New Tab:</strong> Open a new tab using Ctrl+T</li>
+                    <li><strong>Close Tab:</strong> Close the current tab with Ctrl+W</li>
+                    <li><strong>Navigate:</strong> Type a URL in the address bar and press Enter</li>
+                    <li><strong>Back/Forward:</strong> Use the navigation buttons or Alt+Left/Right</li>
+                    <li><strong>Reload:</strong> Reload the current page using Ctrl+R</li>
+                </ul>
+
+                <h2>⌨️ Keyboard Shortcuts</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
+                    <div>
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><code>Ctrl+T</code>: New tab</li>
+                            <li><code>Ctrl+W</code>: Close tab</li>
+                            <li><code>Ctrl+R</code>: Reload page</li>
+                            <li><code>Ctrl+L</code>: Focus URL bar</li>
+                            <li><code>Alt+Left</code>: Back</li>
+                            <li><code>Alt+Right</code>: Forward</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Browser Features</h4>
+                        <ul>
+                            <li><code>Ctrl+B</code>: Toggle bookmark</li>
+                            <li><code>Ctrl+H</code>: Show history</li>
+                            <li><code>Ctrl+,</code>: Show settings</li>
+                            <li><code>Ctrl+F</code>: Find in page</li>
+                            <li><code>F11</code>: Toggle fullscreen</li>
+                            <li><code>Ctrl+N</code>: New window</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Zoom &amp; View</h4>
+                        <ul>
+                            <li><code>Ctrl++</code>: Zoom in</li>
+                            <li><code>Ctrl+-</code>: Zoom out</li>
+                            <li><code>Ctrl+0</code>: Reset zoom</li>
+                            <li><code>Ctrl+S</code>: Save page</li>
+                            <li><code>Ctrl+Q</code>: Exit browser</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Edit Operations</h4>
+                        <ul>
+                            <li><code>Ctrl+Z</code>: Undo</li>
+                            <li><code>Ctrl+Y</code>: Redo</li>
+                            <li><code>Ctrl+X</code>: Cut</li>
+                            <li><code>Ctrl+C</code>: Copy</li>
+                            <li><code>Ctrl+V</code>: Paste</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2>💾 Data Storage</h2>
+                <p>Browser data (bookmarks, history, settings) is stored in the following location:</p>
+                <ul>
+                    <li><strong>Windows:</strong> <code>%USERPROFILE%\.type_browser</code></li>
+                    <li><strong>Linux/Mac:</strong> <code>~/.type_browser</code></li>
+                </ul>
+
+                <h2>🤝 Contributing</h2>
+                <p>Contributions are welcome! Please feel free to submit a Pull Request to help improve Type_Browser.</p>
+
+                <h2>📄 License</h2>
+                <p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
+
+                <div class="project-actions">
+                    <a href="https://github.com/EriRJorge/Type_Browser" class="btn-primary" target="_blank">View on GitHub</a>
+                    <a href="typebrowser.site" class="btn-secondary" target="_blank">Download Release</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">
+                            <span class="logo-type">Type</span><span class="logo-software">_Software</span>
+                        </span>
+                    </div>
+                    <p>Open source tools for the next generation of developers.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Projects</h4>
+                        <a href="typesearch.html">TypeSearch</a>
+                        <a href="explainbytype.html">Type_List</a>
+                        <a href="typebrowser.html">Type_Browser</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <a href="https://github.com/EriRJorge/Type_Browser/blob/main/README.md">Documentation</a>
+                        <a href="https://github.com/EriRJorge/Type_Browser/blob/main/README.md">Tutorials</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <a href="https://github.com/EriRJorge/Type_Browser/tree/main">GitHub</a>
+                        <a href="https://discord.gg/W93hjTAcDe">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 Type_Software. Open source, always.
+                </p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="license.html">License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
