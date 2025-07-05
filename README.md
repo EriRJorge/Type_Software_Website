@@ -18,7 +18,7 @@ Type_Software is more than just a collection of projects—it's a philosophy. We
 
 ## 🚀 Projects
 
-### TypeSearch
+### Type_Search
 A clean, fast search engine built for modification and experimentation. Think of it as a base layer for building your own search experiences.
 
 - **Live Site**: [typesearch.click](https://typesearch.click)
